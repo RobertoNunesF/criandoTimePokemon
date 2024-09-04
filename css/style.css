@@ -1,0 +1,1805 @@
+:root {
+    --Bug: #A6B91A;
+    --Bug-border: #3D4409;
+    --Dark: #705746;
+    --Dark-border: #5C4033;
+    --Dragon: #6F35FC;
+    --Dragon-border: #2D1668;
+    --Electric: #F7D02C;
+    --Electric-border: #F5DE00;
+    --Fairy: #D685AD;
+    --Fairy-border: #AA336A;
+    --Fight: #C22E28;
+    --Fight-border: #8D201c;
+    --Fire: #EE8130;
+    --Fire-border: #C61A09;
+    --Flying: #A98FF3;
+    --Flying-border: #705EA0;
+    --Ghost: #735797;
+    --Ghost-border: #48375E;
+    --Grass: #7AC74C;
+    --Grass-border: #013220;
+    --Ground: #E2BF65;
+    --Ground-border: #7E6A39;
+    --Ice: #96D9D6;
+    --Ice-border: #669290;
+    --Normal: #A8A77A;
+    --Normal-border: #7C7C5A;
+    --Poison: #A33EA1;
+    --Poison-border: #301934;
+    --Psychic: #F95587;
+    --Psychic-border: #370002;
+    --Rock: #B6A136;
+    --Rock-border: #584E19;
+    --Steel: #B7B7CE;
+    --Steel-border: #4C4C55;
+    --Water: #6390F0;
+    --Water-border: #00008B;
+    --fonte: '';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho__container {
+    display: flex;
+    align-items: center;
+    backGround-color: var(--Ice);
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+a img {
+    height: 70px;
+    width: 200px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.form__pesquisa {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.pesquisar__input {
+    height: 40px;
+    padding: 8px;
+    border: 2px solid #f2f2f2;
+    border-radius: 32px 0px 0px 32px;
+    font-size: 16px;
+}
+
+.pesquisar__btn {
+    height: 40px;
+    backGround-color: #f2f2f2;
+    border: 0px;
+    border-radius: 0px 32px 32px 0px;
+    padding: 8px;
+    padding: 15px;
+    border-left: none;
+    cursor: pointer;
+}
+
+.cabecalho__perfil {
+    border: 2px solid #f2f2f2;
+    backGround-color: #f2f2f2;
+    border-radius: 40px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.avatar {
+    height: 50px;
+    width: 50px;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    background-color: #669290;
+    border: 2px solid #669290;
+    border-radius: 16px 16px;
+    margin-top: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.time__titulo {
+    font-size: 20px;
+    font-family: Arial;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.time__slots {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 300px;
+}
+
+.time__escolhido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card {
+    display:flex;
+    flex-direction: column;
+    width: 145px;
+    height: 205px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 0px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    backGround-color: #4C4C55;
+    margin: .5%
+}
+
+.card > h2 {
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial;
+    margin: 0px;
+    padding: 0px;
+}
+
+.card > h3 {
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial;
+    margin-top: 5px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.card > p {
+    text-align: center;
+    font-size: 12px;
+    font-family: Arial;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%;
+    padding: 0.5%;
+}
+
+.Bug {
+    backGround-color: var(--Bug);
+    border: 4px solid var(--Bug-border);
+}
+
+.Bug-Dark {
+    backGround: linear-gradient(var(--Bug),var(--Dark));
+    border: 4px solid var(--Bug-border);
+}
+
+.Bug-Dragon {
+    backGround: linear-gradient(var(--Bug),var(--Dragon));
+    border: 4px solid var(--Bug-border);
+}
+
+.Bug-Electric {
+    backGround: linear-gradient(var(--Bug),var(--Electric));
+    border: 4px solid var(--Bug-border);
+}
+
+.Bug-Fairy {
+    backGround: linear-gradient(var(--Bug),var(--Fairy));
+    border: 4px solid var(--Bug-border);
+}
+
+.Bug-Fight {
+    backGround: linear-gradient(var(--Bug),var(--Fight));
+    border: 4px solid var(--Bug-border);
+}
+
+.Bug-Fire {
+    backGround: linear-gradient(var(--Bug),var(--Fire));
+    border: 4px solid var(--Bug-border);
+}
+
+.Bug-Flying {
+    backGround: linear-gradient(var(--Bug),var(--Flying));
+    border: 4px solid var(--Bug-border);
+}
+
+.Bug-Ghost {
+    backGround: linear-gradient(var(--Bug),var(--Ghost));
+    border: 4px solid var(--Bug-border);
+}
+
+.Bug-Grass {
+    backGround: linear-gradient(var(--Bug),var(--Grass));
+    border: 4px solid var(--Bug-border);
+}
+
+.Bug-Ground {
+    backGround: linear-gradient(var(--Bug),var(--Ground));
+    border: 4px solid var(--Bug-border);
+}
+
+.Bug-Ice {
+    backGround: linear-gradient(var(--Bug),var(--Ice));
+    border: 4px solid var(--Bug-border);
+}
+
+.Bug-Normal {
+    backGround: linear-gradient(var(--Bug),var(--Normal));
+    border: 4px solid var(--Bug-border);
+}
+
+.Bug-Poison {
+    backGround: linear-gradient(var(--Bug),var(--Poison));
+    border: 4px solid var(--Bug-border);
+}
+
+.Bug-Psychic {
+    backGround: linear-gradient(var(--Bug),var(--Psychic));
+    border: 4px solid var(--Bug-border);
+}
+
+.Bug-Rock {
+    backGround: linear-gradient(var(--Bug),var(--Rock));
+    border: 4px solid var(--Bug-border);
+}
+
+.Bug-Steel {
+    backGround: linear-gradient(var(--Bug),var(--Steel));
+    border: 4px solid var(--Bug-border);
+}
+
+.Bug-Water {
+    backGround: linear-gradient(var(--Bug),var(--Water));
+    border: 4px solid var(--Bug-border);
+}
+
+.Dark {
+    backGround-color: var(--Dark);
+    border: 4px solid var(--Dark-border);
+}
+
+.Dark-Bug {
+    backGround: linear-gradient(var(--Dark),var(--Bug));
+    border: 4px solid var(--Dark-border);
+}
+
+.Dark-Dragon {
+    backGround: linear-gradient(var(--Dark),var(--Dragon));
+    border: 4px solid var(--Dark-border);
+}
+
+.Dark-Electric {
+    backGround: linear-gradient(var(--Dark),var(--Electric));
+    border: 4px solid var(--Dark-border);
+}
+
+.Dark-Fairy {
+    backGround: linear-gradient(var(--Dark),var(--Fairy));
+    border: 4px solid var(--Dark-border);
+}
+
+.Dark-Fight {
+    backGround: linear-gradient(var(--Dark),var(--Fight));
+    border: 4px solid var(--Dark-border);
+}
+
+.Dark-Fire {
+    backGround: linear-gradient(var(--Dark),var(--Fire));
+    border: 4px solid var(--Dark-border);
+}
+
+.Dark-Flying {
+    backGround: linear-gradient(var(--Dark),var(--Flying));
+    border: 4px solid var(--Dark-border);
+}
+
+.Dark-Ghost {
+    backGround: linear-gradient(var(--Dark),var(--Ghost));
+    border: 4px solid var(--Dark-border);
+}
+
+.Dark-Grass {
+    backGround: linear-gradient(var(--Dark),var(--Grass));
+    border: 4px solid var(--Dark-border);
+}
+
+.Dark-Ground {
+    backGround: linear-gradient(var(--Dark),var(--Ground));
+    border: 4px solid var(--Dark-border);
+}
+
+.Dark-Ice {
+    backGround: linear-gradient(var(--Dark),var(--Ice));
+    border: 4px solid var(--Dark-border);
+}
+
+.Dark-Normal {
+    backGround: linear-gradient(var(--Dark),var(--Normal));
+    border: 4px solid var(--Dark-border);
+}
+
+.Dark-Poison {
+    backGround: linear-gradient(var(--Dark),var(--Poison));
+    border: 4px solid var(--Dark-border);
+}
+
+.Dark-Psychic {
+    backGround: linear-gradient(var(--Dark),var(--Psychic));
+    border: 4px solid var(--Dark-border);
+}
+
+.Dark-Rock {
+    backGround: linear-gradient(var(--Dark),var(--Rock));
+    border: 4px solid var(--Dark-border);
+}
+
+.Dark-Steel {
+    backGround: linear-gradient(var(--Dark),var(--Steel));
+    border: 4px solid var(--Dark-border);
+}
+
+.Dark-Water {
+    backGround: linear-gradient(var(--Dark),var(--Water));
+    border: 4px solid var(--Dark-border);
+}
+
+.Dragon {
+    backGround-color: var(--Dragon);
+    border: 4px solid var(--Dragon-border);
+}
+
+.Dragon-Bug {
+    backGround: linear-gradient(var(--Dragon),var(--Bug));
+    border: 4px solid var(--Dragon-border);
+}
+
+.Dragon-Dark {
+    backGround: linear-gradient(var(--Dragon),var(--Dark));
+    border: 4px solid var(--Dragon-border);
+}
+
+.Dragon-Electric {
+    backGround: linear-gradient(var(--Dragon),var(--Electric));
+    border: 4px solid var(--Dragon-border);
+}
+
+.Dragon-Fairy {
+    backGround: linear-gradient(var(--Dragon),var(--Fairy));
+    border: 4px solid var(--Dragon-border);
+}
+
+.Dragon-Fight {
+    backGround: linear-gradient(var(--Dragon),var(--Fight));
+    border: 4px solid var(--Dragon-border);
+}
+
+.Dragon-Fire {
+    backGround: linear-gradient(var(--Dragon),var(--Fire));
+    border: 4px solid var(--Dragon-border);
+}
+
+.Dragon-Flying {
+    backGround: linear-gradient(var(--Dragon),var(--Flying));
+    border: 4px solid var(--Dragon-border);
+}
+
+.Dragon-Ghost {
+    backGround: linear-gradient(var(--Dragon),var(--Ghost));
+    border: 4px solid var(--Dragon-border);
+}
+
+.Dragon-Grass {
+    backGround: linear-gradient(var(--Dragon),var(--Grass));
+    border: 4px solid var(--Dragon-border);
+}
+
+.Dragon-Ground {
+    backGround: linear-gradient(var(--Dragon),var(--Ground));
+    border: 4px solid var(--Dragon-border);
+}
+
+.Dragon-Ice {
+    backGround: linear-gradient(var(--Dragon),var(--Ice));
+    border: 4px solid var(--Dragon-border);
+}
+
+.Dragon-Normal {
+    backGround: linear-gradient(var(--Dragon),var(--Normal));
+    border: 4px solid var(--Dragon-border);
+}
+
+.Dragon-Poison {
+    backGround: linear-gradient(var(--Dragon),var(--Poison));
+    border: 4px solid var(--Dragon-border);
+}
+
+.Dragon-Psychic {
+    backGround: linear-gradient(var(--Dragon),var(--Psychic));
+    border: 4px solid var(--Dragon-border);
+}
+
+.Dragon-Rock {
+    backGround: linear-gradient(var(--Dragon),var(--Rock));
+    border: 4px solid var(--Dragon-border);
+}
+
+.Dragon-Steel {
+    backGround: linear-gradient(var(--Dragon),var(--Steel));
+    border: 4px solid var(--Dragon-border);
+}
+
+.Dragon-Water {
+    backGround: linear-gradient(var(--Dragon),var(--Water));
+    border: 4px solid var(--Dragon-border);
+}
+
+.Electric {
+    backGround-color: var(--Electric); 
+    border: 4px solid var(--Electric-border);
+}
+
+.Electric-Bug {
+    backGround: linear-gradient(var(--Electric),var(--Bug));
+    border: 4px solid var(--Electric-border);
+}
+
+.Electric-Dark {
+    backGround: linear-gradient(var(--Electric),var(--Dark));
+    border: 4px solid var(--Electric-border);
+}
+
+.Electric-Dragon {
+    backGround: linear-gradient(var(--Electric),var(--Dragon));
+    border: 4px solid var(--Electric-border);
+}
+
+.Electric-Fairy {
+    backGround: linear-gradient(var(--Electric),var(--Fairy));
+    border: 4px solid var(--Electric-border);
+}
+
+.Electric-Fight {
+    backGround: linear-gradient(var(--Electric),var(--Fight));
+    border: 4px solid var(--Electric-border);
+}
+
+.Electric-Fire {
+    backGround: linear-gradient(var(--Electric),var(--Fire));
+    border: 4px solid var(--Electric-border);
+}
+
+.Electric-Flying {
+    backGround: linear-gradient(var(--Electric),var(--Flying));
+    border: 4px solid var(--Electric-border);
+}
+
+.Electric-Ghost {
+    backGround: linear-gradient(var(--Electric),var(--Ghost));
+    border: 4px solid var(--Electric-border);
+}
+
+.Electric-Grass {
+    backGround: linear-gradient(var(--Electric),var(--Grass));
+    border: 4px solid var(--Electric-border);
+}
+
+.Electric-Ground {
+    backGround: linear-gradient(var(--Electric),var(--Ground));
+    border: 4px solid var(--Electric-border);
+}
+
+.Electric-Ice {
+    backGround: linear-gradient(var(--Electric),var(--Ice));
+    border: 4px solid var(--Electric-border);
+}
+
+.Electric-Normal {
+    backGround: linear-gradient(var(--Electric),var(--Normal));
+    border: 4px solid var(--Electric-border);
+}
+
+.Electric-Poison {
+    backGround: linear-gradient(var(--Electric),var(--Poison));
+    border: 4px solid var(--Electric-border);
+}
+
+.Electric-Psychic {
+    backGround: linear-gradient(var(--Electric),var(--Psychic));
+    border: 4px solid var(--Electric-border);
+}
+
+.Electric-Rock {
+    backGround: linear-gradient(var(--Electric),var(--Rock));
+    border: 4px solid var(--Electric-border);
+}
+
+.Electric-Steel {
+    backGround: linear-gradient(var(--Electric),var(--Steel));
+    border: 4px solid var(--Electric-border);
+}
+
+.Electric-Water {
+    backGround: linear-gradient(var(--Electric),var(--Water));
+    border: 4px solid var(--Electric-border);
+}
+
+.Fairy {
+    backGround-color: var(--Fairy);
+    border: 4px solid var(--Fairy-border);
+}
+
+.Fairy-Bug {
+    backGround: linear-gradient(var(--Fairy),var(--Bug));
+    border: 4px solid var(--Fairy-border);
+}
+
+.Fairy-Dark {
+    backGround: linear-gradient(var(--Fairy),var(--Bug));
+    border: 4px solid var(--Fairy-border);
+}
+
+.Fairy-Dragon {
+    backGround: linear-gradient(var(--Fairy),var(--Dragon));
+    border: 4px solid var(--Fairy-border);
+}
+
+.Fairy-Electric {
+    backGround: linear-gradient(var(--Fairy),var(--Electric));
+    border: 4px solid var(--Fairy-border);
+}
+
+.Fairy-Fight {
+    backGround: linear-gradient(var(--Fairy),var(--Fight));
+    border: 4px solid var(--Fairy-border);
+}
+
+.Fairy-Fire {
+    backGround: linear-gradient(var(--Fairy),var(--Fire));
+    border: 4px solid var(--Fairy-border);
+}
+
+.Fairy-Flying {
+    backGround: linear-gradient(var(--Fairy),var(--Flying));
+    border: 4px solid var(--Fairy-border);
+}
+
+.Fairy-Ghost {
+    backGround: linear-gradient(var(--Fairy),var(--Ghost));
+    border: 4px solid var(--Fairy-border);
+}
+
+.Fairy-Grass {
+    backGround: linear-gradient(var(--Fairy),var(--Grass));
+    border: 4px solid var(--Fairy-border);
+}
+
+.Fairy-Ground {
+    backGround: linear-gradient(var(--Fairy),var(--Ground));
+    border: 4px solid var(--Fairy-border);
+}
+
+.Fairy-Ice {
+    backGround: linear-gradient(var(--Fairy),var(--Ice));
+    border: 4px solid var(--Fairy-border);
+}
+
+.Fairy-Normal {
+    backGround: linear-gradient(var(--Fairy),var(--Normal));
+    border: 4px solid var(--Fairy-border);
+}
+
+.Fairy-Poison {
+    backGround: linear-gradient(var(--Fairy),var(--Poison));
+    border: 4px solid var(--Fairy-border);
+}
+
+.Fairy-Psychic {
+    backGround: linear-gradient(var(--Fairy),var(--Psychic));
+    border: 4px solid var(--Fairy-border);
+}
+
+.Fairy-Rock {
+    backGround: linear-gradient(var(--Fairy),var(--Rock));
+    border: 4px solid var(--Fairy-border);
+}
+
+.Fairy-Steel {
+    backGround: linear-gradient(var(--Fairy),var(--Steel));
+    border: 4px solid var(--Fairy-border);
+}
+
+.Fairy-Water {
+    backGround: linear-gradient(var(--Fairy),var(--Water));
+    border: 4px solid var(--Fairy-border);
+}
+
+.Fight {
+    backGround-color: var(--Fight);
+    border: 4px solid var(--Fight-border);
+}
+
+.Fight-Bug {
+    backGround: linear-gradient(var(--Fight),var(--Bug));
+    border: 4px solid var(--Fight-border);
+}
+
+.Fight-Dark {
+    backGround: linear-gradient(var(--Fight),var(--Dark));
+    border: 4px solid var(--Fight-border);
+}
+
+.Fight-Dragon {
+    backGround: linear-gradient(var(--Fight),var(--Dragon));
+    border: 4px solid var(--Fight-border);
+}
+
+.Fight-Electric {
+    backGround: linear-gradient(var(--Fight),var(--Electric));
+    border: 4px solid var(--Fight-border);
+}
+
+.Fight-Fairy {
+    backGround: linear-gradient(var(--Fight),var(--Fairy));
+    border: 4px solid var(--Fight-border);
+}
+
+.Fight-Fire {
+    backGround: linear-gradient(var(--Fight),var(--Fire));
+    border: 4px solid var(--Fight-border);
+}
+
+.Fight-Flying {
+    backGround: linear-gradient(var(--Fight),var(--Flying));
+    border: 4px solid var(--Fight-border);
+}
+
+.Fight-Ghost {
+    backGround: linear-gradient(var(--Fight),var(--Ghost));
+    border: 4px solid var(--Fight-border);
+}
+
+.Fight-Grass {
+    backGround: linear-gradient(var(--Fight),var(--Grass));
+    border: 4px solid var(--Fight-border);
+}
+
+.Fight-Ground {
+    backGround: linear-gradient(var(--Fight),var(--Ground));
+    border: 4px solid var(--Fight-border);
+}
+
+.Fight-Ice {
+    backGround: linear-gradient(var(--Fight),var(--Ice));
+    border: 4px solid var(--Fight-border);
+}
+
+.Fight-Normal {
+    backGround: linear-gradient(var(--Fight),var(--Normal));
+    border: 4px solid var(--Fight-border);
+}
+
+.Fight-Poison {
+    backGround: linear-gradient(var(--Fight),var(--Poison));
+    border: 4px solid var(--Fight-border);
+}
+
+.Fight-Psychic {
+    backGround: linear-gradient(var(--Fight),var(--Psychic));
+    border: 4px solid var(--Fight-border);
+}
+
+.Fight-Rock {
+    backGround: linear-gradient(var(--Fight),var(--Rock));
+    border: 4px solid var(--Fight-border);
+}
+
+.Fight-Steel {
+    backGround: linear-gradient(var(--Fight),var(--Steel));
+    border: 4px solid var(--Fight-border);
+}
+
+.Fight-Water {
+    backGround: linear-gradient(var(--Fight),var(--Bug));
+    border: 4px solid var(--Fight-border);
+}
+
+.Fire {
+    backGround-color: var(--Fire);
+    border: 4px solid var(--Fire-border);
+}
+
+.Fire-Bug {
+    backGround: linear-gradient(var(--Fire),var(--Bug));
+    border: 4px solid var(--Fire-border);
+}
+
+.Fire-Dark {
+    backGround: linear-gradient(var(--Fire),var(--Dark));
+    border: 4px solid var(--Fire-border);
+}
+
+.Fire-Dragon {
+    backGround: linear-gradient(var(--Fire),var(--Dragon));
+    border: 4px solid var(--Fire-border);
+}
+
+.Fire-Electric {
+    backGround: linear-gradient(var(--Fire),var(--Electric));
+    border: 4px solid var(--Fire-border);
+}
+
+.Fire-Fairy {
+    backGround: linear-gradient(var(--Fire),var(--Fairy));
+    border: 4px solid var(--Fire-border);
+}
+
+.Fire-Fight {
+    backGround: linear-gradient(var(--Fire),var(--Fight));
+    border: 4px solid var(--Fire-border);
+}
+
+.Fire-Flying {
+    backGround: linear-gradient(var(--Fire),var(--Flying));
+    border: 4px solid var(--Fire-border);
+}
+
+.Fire-Ghost {
+    backGround: linear-gradient(var(--Fire),var(--Ghost));
+    border: 4px solid var(--Fire-border);
+}
+
+.Fire-Grass {
+    backGround: linear-gradient(var(--Fire),var(--Grass));
+    border: 4px solid var(--Fire-border);
+}
+
+.Fire-Ground {
+    backGround: linear-gradient(var(--Fire),var(--Ground));
+    border: 4px solid var(--Fire-border);
+}
+
+.Fire-Ice {
+    backGround: linear-gradient(var(--Fire),var(--Ice));
+    border: 4px solid var(--Fire-border);
+}
+
+.Fire-Normal {
+    backGround: linear-gradient(var(--Fire),var(--Normal));
+    border: 4px solid var(--Fire-border);
+}
+
+.Fire-Poison {
+    backGround: linear-gradient(var(--Fire),var(--Poison));
+    border: 4px solid var(--Fire-border);
+}
+
+.Fire-Psychic {
+    backGround: linear-gradient(var(--Fire),var(--Psychic));
+    border: 4px solid var(--Fire-border);
+}
+
+.Fire-Rock {
+    backGround: linear-gradient(var(--Fire),var(--Rock));
+    border: 4px solid var(--Fire-border);
+}
+
+.Fire-Steel {
+    backGround: linear-gradient(var(--Fire),var(--Steel));
+    border: 4px solid var(--Fire-border);
+}
+
+.Fire-Water {
+    backGround: linear-gradient(var(--Fire),var(--Water));
+    border: 4px solid var(--Fire-border);
+}
+
+.Flying {
+    backGround-color: var(--Flying);
+    border: 4px solid var(--Flying-border);
+}
+
+.Flying-Bug {
+    backGround: linear-gradient(var(--Flying),var(--Bug));
+    border: 4px solid var(--Flying-border);
+}
+
+.Flying-Dark {
+    backGround: linear-gradient(var(--Flying),var(--Dark));
+    border: 4px solid var(--Flying-border);
+}
+
+.Flying-Dragon {
+    backGround: linear-gradient(var(--Flying),var(--Dragon));
+    border: 4px solid var(--Flying-border);
+}
+
+.Flying-Electric {
+    backGround: linear-gradient(var(--Flying),var(--Electric));
+    border: 4px solid var(--Flying-border);
+}
+
+.Flying-Fairy {
+    backGround: linear-gradient(var(--Flying),var(--Fairy));
+    border: 4px solid var(--Flying-border);
+}
+
+.Flying-Fight {
+    backGround: linear-gradient(var(--Flying),var(--Fight));
+    border: 4px solid var(--Flying-border);
+}
+
+.Flying-Fire {
+    backGround: linear-gradient(var(--Flying),var(--Fire));
+    border: 4px solid var(--Flying-border);
+}
+
+.Flying-Ghost {
+    backGround: linear-gradient(var(--Flying),var(--Ghost));
+    border: 4px solid var(--Flying-border);
+}
+
+.Flying-Grass {
+    backGround: linear-gradient(var(--Flying),var(--Grass));
+    border: 4px solid var(--Flying-border);
+}
+
+.Flying-Ground {
+    backGround: linear-gradient(var(--Flying),var(--Ground));
+    border: 4px solid var(--Flying-border);
+}
+
+.Flying-Ice {
+    backGround: linear-gradient(var(--Flying),var(--Ice));
+    border: 4px solid var(--Flying-border);
+}
+
+.Flying-Normal {
+    backGround: linear-gradient(var(--Flying),var(--Normal));
+    border: 4px solid var(--Flying-border);
+}
+
+.Flying-Poison {
+    backGround: linear-gradient(var(--Flying),var(--Poison));
+    border: 4px solid var(--Flying-border);
+}
+
+.Flying-Psychic {
+    backGround: linear-gradient(var(--Flying),var(--Psychic));
+    border: 4px solid var(--Flying-border);
+}
+
+.Flying-Rock {
+    backGround: linear-gradient(var(--Flying),var(--Rock));
+    border: 4px solid var(--Flying-border);
+}
+
+.Flying-Steel {
+    backGround: linear-gradient(var(--Flying),var(--Steel));
+    border: 4px solid var(--Flying-border);
+}
+
+.Flying-Water {
+    backGround: linear-gradient(var(--Flying),var(--Water));
+    border: 4px solid var(--Flying-border);
+}
+
+.Ghost {
+    backGround-color: var(--Ghost);
+    border: 4px solid var(--Ghost-border);
+}
+
+.Ghost-Bug {
+    backGround: linear-gradient(var(--Ghost),var(--Bug));
+    border: 4px solid var(--Ghost-border);
+}
+
+.Ghost-Dark {
+    backGround: linear-gradient(var(--Ghost),var(--Dark));
+    border: 4px solid var(--Ghost-border);
+}
+
+.Ghost-Dragon {
+    backGround: linear-gradient(var(--Ghost),var(--Dragon));
+    border: 4px solid var(--Ghost-border);
+}
+
+.Ghost-Electric {
+    backGround: linear-gradient(var(--Ghost),var(--Electric));
+    border: 4px solid var(--Ghost-border);
+}
+
+.Ghost-Fairy {
+    backGround: linear-gradient(var(--Ghost),var(--Fairy));
+    border: 4px solid var(--Ghost-border);
+}
+
+.Ghost-Fight {
+    backGround: linear-gradient(var(--Ghost),var(--Fight));
+    border: 4px solid var(--Ghost-border);
+}
+
+.Ghost-Fire {
+    backGround: linear-gradient(var(--Ghost),var(--Fire));
+    border: 4px solid var(--Ghost-border);
+}
+
+.Ghost-Flying {
+    backGround: linear-gradient(var(--Ghost),var(--Flying));
+    border: 4px solid var(--Ghost-border);
+}
+
+.Ghost-Grass {
+    backGround: linear-gradient(var(--Ghost),var(--Grass));
+    border: 4px solid var(--Ghost-border);
+}
+
+.Ghost-Ground {
+    backGround: linear-gradient(var(--Ghost),var(--Ground));
+    border: 4px solid var(--Ghost-border);
+}
+
+.Ghost-Ice {
+    backGround: linear-gradient(var(--Ghost),var(--Ice));
+    border: 4px solid var(--Ghost-border);
+}
+
+.Ghost-Normal {
+    backGround: linear-gradient(var(--Ghost),var(--Normal));
+    border: 4px solid var(--Ghost-border);
+}
+
+.Ghost-Poison {
+    backGround: linear-gradient(var(--Ghost),var(--Poison));
+    border: 4px solid var(--Ghost-border);
+}
+
+.Ghost-Psychic {
+    backGround: linear-gradient(var(--Ghost),var(--Psychic));
+    border: 4px solid var(--Ghost-border);
+}
+
+.Ghost-Rock {
+    backGround: linear-gradient(var(--Ghost),var(--Rock));
+    border: 4px solid var(--Ghost-border);
+}
+
+.Ghost-Steel {
+    backGround: linear-gradient(var(--Ghost),var(--Steel));
+    border: 4px solid var(--Ghost-border);
+}
+
+.Ghost-Water {
+    backGround: linear-gradient(var(--Ghost),var(--Water));
+    border: 4px solid var(--Ghost-border);
+}
+
+.Grass {
+    backGround-color: var(--Grass);
+    border: 4px solid var(--Grass-border);
+}
+
+.Grass-Bug {
+    backGround: linear-gradient(var(--Grass),var(--Bug));
+    border: 4px solid var(--Grass-border);
+}
+
+.Grass-Dark {
+    backGround: linear-gradient(var(--Grass),var(--Dark));
+    border: 4px solid var(--Grass-border);
+}
+
+.Grass-Dragon {
+    backGround: linear-gradient(var(--Grass),var(--Dragon));
+    border: 4px solid var(--Grass-border);
+}
+
+.Grass-Electric {
+    backGround: linear-gradient(var(--Grass),var(--Electric));
+    border: 4px solid var(--Grass-border);
+}
+
+.Grass-Fairy {
+    backGround: linear-gradient(var(--Grass),var(--Fairy));
+    border: 4px solid var(--Grass-border);
+}
+
+.Grass-Fight {
+    backGround: linear-gradient(var(--Grass),var(--Fight));
+    border: 4px solid var(--Grass-border);
+}
+
+.Grass-Fire {
+    backGround: linear-gradient(var(--Grass),var(--Fire));
+    border: 4px solid var(--Grass-border);
+}
+
+.Grass-Flying {
+    backGround: linear-gradient(var(--Grass),var(--Flying));
+    border: 4px solid var(--Grass-border);
+}
+
+.Grass-Ghost {
+    backGround: linear-gradient(var(--Grass),var(--Ghost));
+    border: 4px solid var(--Grass-border);
+}
+
+.Grass-Ground {
+    backGround: linear-gradient(var(--Grass),var(--Ground));
+    border: 4px solid var(--Grass-border);
+}
+
+.Grass-Ice {
+    backGround: linear-gradient(var(--Grass),var(--Ice));
+    border: 4px solid var(--Grass-border);
+}
+
+.Grass-Normal {
+    backGround: linear-gradient(var(--Grass),var(--Normal));
+    border: 4px solid var(--Grass-border);
+}
+
+.Grass-Poison {
+    backGround: linear-gradient(var(--Grass),var(--Poison));
+    border: 4px solid var(--Grass-border);
+}
+
+.Grass-Psychic {
+    backGround: linear-gradient(var(--Grass),var(--Psychic));
+    border: 4px solid var(--Grass-border);
+}
+
+.Grass-Rock {
+    backGround: linear-gradient(var(--Grass),var(--Rock));
+    border: 4px solid var(--Grass-border);
+}
+
+.Grass-Steel {
+    backGround: linear-gradient(var(--Grass),var(--Steel));
+    border: 4px solid var(--Grass-border);
+}
+
+.Grass-Water {
+    backGround: linear-gradient(var(--Grass),var(--Water));
+    border: 4px solid var(--Grass-border);
+}
+
+.Ground {
+    backGround-color: var(--Ground);
+    border: 4px solid var(--Ground-border);
+}
+
+.Ground-Bug {
+    backGround: linear-gradient(var(--Ground),var(--Bug));
+    border: 4px solid var(--Ground-border);
+}
+
+.Ground-Dark {
+    backGround: linear-gradient(var(--Ground),var(--Dark));
+    border: 4px solid var(--Ground-border);
+}
+
+.Ground-Dragon {
+    backGround: linear-gradient(var(--Ground),var(--Dragon));
+    border: 4px solid var(--Ground-border);
+}
+
+.Ground-Electric {
+    backGround: linear-gradient(var(--Ground),var(--Electric));
+    border: 4px solid var(--Ground-border);
+}
+
+.Ground-Fairy {
+    backGround: linear-gradient(var(--Ground),var(--Fairy));
+    border: 4px solid var(--Ground-border);
+}
+
+.Ground-Fight {
+    backGround: linear-gradient(var(--Ground),var(--Fight));
+    border: 4px solid var(--Ground-border);
+}
+
+.Ground-Fire {
+    backGround: linear-gradient(var(--Ground),var(--Fire));
+    border: 4px solid var(--Ground-border);
+}
+
+.Ground-Flying {
+    backGround: linear-gradient(var(--Ground),var(--Flying));
+    border: 4px solid var(--Ground-border);
+}
+
+.Ground-Ghost {
+    backGround: linear-gradient(var(--Ground),var(--Ghost));
+    border: 4px solid var(--Ground-border);
+}
+
+.Ground-Grass {
+    backGround: linear-gradient(var(--Ground),var(--Grass));
+    border: 4px solid var(--Ground-border);
+}
+
+.Ground-Ice {
+    backGround: linear-gradient(var(--Ground),var(--Ice));
+    border: 4px solid var(--Ground-border);
+}
+
+.Ground-Normal {
+    backGround: linear-gradient(var(--Ground),var(--Normal));
+    border: 4px solid var(--Ground-border);
+}
+
+.Ground-Poison {
+    backGround: linear-gradient(var(--Ground),var(--Poison));
+    border: 4px solid var(--Ground-border);
+}
+
+.Ground-Psychic {
+    backGround: linear-gradient(var(--Ground),var(--Psychic));
+    border: 4px solid var(--Ground-border);
+}
+
+.Ground-Rock {
+    backGround: linear-gradient(var(--Ground),var(--Rock));
+    border: 4px solid var(--Ground-border);
+}
+
+.Ground-Steel {
+    backGround: linear-gradient(var(--Ground),var(--Steel));
+    border: 4px solid var(--Ground-border);
+}
+
+.Ground-Water {
+    backGround: linear-gradient(var(--Ground),var(--Water));
+    border: 4px solid var(--Ground-border);
+}
+
+.Ice {
+    backGround-color: var(--Ice);
+    border: 4px solid var(--Ice-border);
+}
+
+.Ice-Bug {
+    backGround: linear-gradient(var(--Ice),var(--Bug));
+    border: 4px solid var(--Ice-border);
+}
+
+.Ice-Dark {
+    backGround: linear-gradient(var(--Ice),var(--Dark));
+    border: 4px solid var(--Ice-border);
+}
+
+.Ice-Dragon {
+    backGround: linear-gradient(var(--Ice),var(--Dragon));
+    border: 4px solid var(--Ice-border);
+}
+
+.Ice-Electric {
+    backGround: linear-gradient(var(--Ice),var(--Electric));
+    border: 4px solid var(--Ice-border);
+}
+
+.Ice-Fairy {
+    backGround: linear-gradient(var(--Ice),var(--Fairy));
+    border: 4px solid var(--Ice-border);
+}
+
+.Ice-Fight {
+    backGround: linear-gradient(var(--Ice),var(--Fight));
+    border: 4px solid var(--Ice-border);
+}
+
+.Ice-Fire {
+    backGround: linear-gradient(var(--Ice),var(--Fire));
+    border: 4px solid var(--Ice-border);
+}
+
+.Ice-Flying {
+    backGround: linear-gradient(var(--Ice),var(--Flying));
+    border: 4px solid var(--Ice-border);
+}
+
+.Ice-Ghost {
+    backGround: linear-gradient(var(--Ice),var(--Ghost));
+    border: 4px solid var(--Ice-border);
+}
+
+.Ice-Grass {
+    backGround: linear-gradient(var(--Ice),var(--Grass));
+    border: 4px solid var(--Ice-border);
+}
+
+.Ice-Ground {
+    backGround: linear-gradient(var(--Ice),var(--Ground));
+    border: 4px solid var(--Ice-border);
+}
+
+.Ice-Normal {
+    backGround: linear-gradient(var(--Ice),var(--Normal));
+    border: 4px solid var(--Ice-border);
+}
+
+.Ice-Poison {
+    backGround: linear-gradient(var(--Ice),var(--Poison));
+    border: 4px solid var(--Ice-border);
+}
+
+.Ice-Psychic {
+    backGround: linear-gradient(var(--Ice),var(--Psychic));
+    border: 4px solid var(--Ice-border);
+}
+
+.Ice-Rock {
+    backGround: linear-gradient(var(--Ice),var(--Rock));
+    border: 4px solid var(--Ice-border);
+}
+
+.Ice-Steel {
+    backGround: linear-gradient(var(--Ice),var(--Steel));
+    border: 4px solid var(--Ice-border);
+}
+
+.Ice-Water {
+    backGround: linear-gradient(var(--Ice),var(--Water));
+    border: 4px solid var(--Ice-border);
+}
+
+.Normal {
+    backGround-color: var(--Normal);
+    border: 4px solid var(--Normal-border);
+}
+
+.Normal-Bug {
+    backGround: linear-gradient(var(--Normal),var(--Bug));
+    border: 4px solid var(--Normal-border);
+}
+
+.Normal-Dark {
+    backGround: linear-gradient(var(--Normal),var(--Dark));
+    border: 4px solid var(--Normal-border);
+}
+
+.Normal-Dragon {
+    backGround: linear-gradient(var(--Normal),var(--Dragon));
+    border: 4px solid var(--Normal-border);
+}
+
+.Normal-Electric {
+    backGround: linear-gradient(var(--Normal),var(--Electric));
+    border: 4px solid var(--Normal-border);
+}
+
+.Normal-Fairy {
+    backGround: linear-gradient(var(--Normal),var(--Fairy));
+    border: 4px solid var(--Normal-border);
+}
+
+.Normal-Fight {
+    backGround: linear-gradient(var(--Normal),var(--Fight));
+    border: 4px solid var(--Normal-border);
+}
+
+.Normal-Fire {
+    backGround: linear-gradient(var(--Normal),var(--Fire));
+    border: 4px solid var(--Normal-border);
+}
+
+.Normal-Flying {
+    backGround: linear-gradient(var(--Normal),var(--Flying));
+    border: 4px solid var(--Normal-border);
+}
+
+.Normal-Ghost {
+    backGround: linear-gradient(var(--Normal),var(--Ghost));
+    border: 4px solid var(--Normal-border);
+}
+
+.Normal-Grass {
+    backGround: linear-gradient(var(--Normal),var(--Grass));
+    border: 4px solid var(--Normal-border);
+}
+
+.Normal-Ground {
+    backGround: linear-gradient(var(--Normal),var(--Ground));
+    border: 4px solid var(--Normal-border);
+}
+
+.Normal-Ice {
+    backGround: linear-gradient(var(--Normal),var(--Ice));
+    border: 4px solid var(--Normal-border);
+}
+
+.Normal-Poison {
+    backGround: linear-gradient(var(--Normal),var(--Normal));
+    border: 4px solid var(--Normal-border);
+}
+
+.Normal-Psychic {
+    backGround: linear-gradient(var(--Normal),var(--Normal));
+    border: 4px solid var(--Normal-border);
+}
+
+.Normal-Rock {
+    backGround: linear-gradient(var(--Normal),var(--Normal));
+    border: 4px solid var(--Normal-border);
+}
+
+.Normal-Steel {
+    backGround: linear-gradient(var(--Normal),var(--Normal));
+    border: 4px solid var(--Normal-border);
+}
+
+.Normal-Water {
+    backGround: linear-gradient(var(--Normal),var(--Normal));
+    border: 4px solid var(--Normal-border);
+}
+
+.Poison {
+    backGround-color: var(--Poison);
+    border: 4px solid var(--Poison-border);
+}
+
+.Poison-Bug {
+    backGround: linear-gradient(var(--Poison),var(--Bug));
+    border: 4px solid var(--Poison-border);
+}
+
+.Poison-Dark {
+    backGround: linear-gradient(var(--Poison),var(--Dark));
+    border: 4px solid var(--Poison-border);
+}
+
+.Poison-Dragon {
+    backGround: linear-gradient(var(--Poison),var(--Dragon));
+    border: 4px solid var(--Poison-border);
+}
+
+.Poison-Electric {
+    backGround: linear-gradient(var(--Poison),var(--Electric));
+    border: 4px solid var(--Poison-border);
+}
+
+.Poison-Fairy {
+    backGround: linear-gradient(var(--Poison),var(--Fairy));
+    border: 4px solid var(--Poison-border);
+}
+
+.Poison-Fight {
+    backGround: linear-gradient(var(--Poison),var(--Fight));
+    border: 4px solid var(--Poison-border);
+}
+
+.Poison-Fire {
+    backGround: linear-gradient(var(--Poison),var(--Fire));
+    border: 4px solid var(--Poison-border);
+}
+
+.Poison-Flying {
+    backGround: linear-gradient(var(--Poison),var(--Flying));
+    border: 4px solid var(--Poison-border);
+}
+
+.Poison-Ghost {
+    backGround: linear-gradient(var(--Poison),var(--Ghost));
+    border: 4px solid var(--Poison-border);
+}
+
+.Poison-Grass {
+    backGround: linear-gradient(var(--Poison),var(--Grass));
+    border: 4px solid var(--Poison-border);
+}
+
+.Poison-Ground {
+    backGround: linear-gradient(var(--Poison),var(--Ground));
+    border: 4px solid var(--Poison-border);
+}
+
+.Poison-Ice {
+    backGround: linear-gradient(var(--Poison),var(--Ice));
+    border: 4px solid var(--Poison-border);
+}
+
+.Poison-Normal {
+    backGround: linear-gradient(var(--Poison),var(--Normal));
+    border: 4px solid var(--Poison-border);
+}
+
+.Poison-Psychic {
+    backGround: linear-gradient(var(--Poison),var(--Psychic));
+    border: 4px solid var(--Poison-border);
+}
+
+.Poison-Rock {
+    backGround: linear-gradient(var(--Poison),var(--Rock));
+    border: 4px solid var(--Poison-border);
+}
+
+.Poison-Steel {
+    backGround: linear-gradient(var(--Poison),var(--Steel));
+    border: 4px solid var(--Poison-border);
+}
+
+.Poison-Water {
+    backGround: linear-gradient(var(--Poison),var(--Water));
+    border: 4px solid var(--Poison-border);
+}
+
+.Psychic {
+    backGround-color: var(--Psychic);
+    border: 4px solid var(--Psychic-border);
+}
+
+.Psychic-Bug {
+    backGround: linear-gradient(var(--Psychic),var(--Bug));
+    border: 4px solid var(--Psychic-border);
+}
+
+.Psychic-Dark {
+    backGround: linear-gradient(var(--Psychic),var(--Dark));
+    border: 4px solid var(--Psychic-border);
+}
+
+.Psychic-Dragon {
+    backGround: linear-gradient(var(--Psychic),var(--Dragon));
+    border: 4px solid var(--Psychic-border);
+}
+
+.Psychic-Electric {
+    backGround: linear-gradient(var(--Psychic),var(--Electric));
+    border: 4px solid var(--Psychic-border);
+}
+
+.Psychic-Fairy {
+    backGround: linear-gradient(var(--Psychic),var(--Fairy));
+    border: 4px solid var(--Psychic-border);
+}
+
+.Psychic-Fight {
+    backGround: linear-gradient(var(--Psychic),var(--Fight));
+    border: 4px solid var(--Psychic-border);
+}
+
+.Psychic-Fire {
+    backGround: linear-gradient(var(--Psychic),var(--Fire));
+    border: 4px solid var(--Psychic-border);
+}
+
+.Psychic-Flying {
+    backGround: linear-gradient(var(--Psychic),var(--Flying));
+    border: 4px solid var(--Psychic-border);
+}
+
+.Psychic-Ghost {
+    backGround: linear-gradient(var(--Psychic),var(--Ghost));
+    border: 4px solid var(--Psychic-border);
+}
+
+.Psychic-Grass {
+    backGround: linear-gradient(var(--Psychic),var(--Grass));
+    border: 4px solid var(--Psychic-border);
+}
+
+.Psychic-Ground {
+    backGround: linear-gradient(var(--Psychic),var(--Ground));
+    border: 4px solid var(--Psychic-border);
+}
+
+.Psychic-Ice {
+    backGround: linear-gradient(var(--Psychic),var(--Ice));
+    border: 4px solid var(--Psychic-border);
+}
+
+.Psychic-Normal {
+    backGround: linear-gradient(var(--Psychic),var(--Normal));
+    border: 4px solid var(--Psychic-border);
+}
+
+.Psychic-Poison {
+    backGround: linear-gradient(var(--Psychic),var(--Poison));
+    border: 4px solid var(--Psychic-border);
+}
+
+.Psychic-Rock {
+    backGround: linear-gradient(var(--Psychic),var(--Rock));
+    border: 4px solid var(--Psychic-border);
+}
+
+.Psychic-Steel {
+    backGround: linear-gradient(var(--Psychic),var(--Steel));
+    border: 4px solid var(--Psychic-border);
+}
+
+.Psychic-Water {
+    backGround: linear-gradient(var(--Psychic),var(--Water));
+    border: 4px solid var(--Psychic-border);
+}
+
+.Rock {
+    backGround-color: var(--Rock);
+    border: 4px solid var(--Rock-border);
+}
+
+.Rock-Bug {
+    backGround: linear-gradient(var(--Rock),var(--Bug));
+    border: 4px solid var(--Rock-border);
+}
+
+.Rock-Dark {
+    backGround: linear-gradient(var(--Rock),var(--Dark));
+    border: 4px solid var(--Rock-border);
+}
+
+.Rock-Dragon {
+    backGround: linear-gradient(var(--Rock),var(--Dragon));
+    border: 4px solid var(--Rock-border);
+}
+
+.Rock-Electric {
+    backGround: linear-gradient(var(--Rock),var(--Electric));
+    border: 4px solid var(--Rock-border);
+}
+
+.Rock-Fairy {
+    backGround: linear-gradient(var(--Rock),var(--Fairy));
+    border: 4px solid var(--Rock-border);
+}
+
+.Rock-Fight {
+    backGround: linear-gradient(var(--Rock),var(--Fight));
+    border: 4px solid var(--Rock-border);
+}
+
+.Rock-Fire {
+    backGround: linear-gradient(var(--Rock),var(--Fire));
+    border: 4px solid var(--Rock-border);
+}
+
+.Rock-Flying {
+    backGround: linear-gradient(var(--Rock),var(--Flying));
+    border: 4px solid var(--Rock-border);
+}
+
+.Rock-Ghost {
+    backGround: linear-gradient(var(--Rock),var(--Ghost));
+    border: 4px solid var(--Rock-border);
+}
+
+.Rock-Grass {
+    backGround: linear-gradient(var(--Rock),var(--Grass));
+    border: 4px solid var(--Rock-border);
+}
+
+.Rock-Ground {
+    backGround: linear-gradient(var(--Rock),var(--Ground));
+    border: 4px solid var(--Rock-border);
+}
+
+.Rock-Ice {
+    backGround: linear-gradient(var(--Rock),var(--Ice));
+    border: 4px solid var(--Rock-border);
+}
+
+.Rock-Normal {
+    backGround: linear-gradient(var(--Rock),var(--Normal));
+    border: 4px solid var(--Rock-border);
+}
+
+.Rock-Poison {
+    backGround: linear-gradient(var(--Rock),var(--Poison));
+    border: 4px solid var(--Rock-border);
+}
+
+.Rock-Psychic {
+    backGround: linear-gradient(var(--Rock),var(--Psychic));
+    border: 4px solid var(--Rock-border);
+}
+
+.Rock-Steel {
+    backGround: linear-gradient(var(--Rock),var(--Steel));
+    border: 4px solid var(--Rock-border);
+}
+
+.Rock-Water {
+    backGround: linear-gradient(var(--Rock),var(--Water));
+    border: 4px solid var(--Rock-border);
+}
+
+.Steel {
+    backGround-color: var(--Steel);
+    border: 4px solid var(--Steel-border);
+}
+
+.Steel-Bug {
+    backGround: linear-gradient(var(--Steel),var(--Bug));
+    border: 4px solid var(--Steel-border);
+}
+
+.Steel-Dark {
+    backGround: linear-gradient(var(--Steel),var(--Dark));
+    border: 4px solid var(--Steel-border);
+}
+
+.Steel-Dragon {
+    backGround: linear-gradient(var(--Steel),var(--Dragon));
+    border: 4px solid var(--Steel-border);
+}
+
+.Steel-Electric {
+    backGround: linear-gradient(var(--Steel),var(--Electric));
+    border: 4px solid var(--Steel-border);
+}
+
+.Steel-Fairy {
+    backGround: linear-gradient(var(--Steel),var(--Fairy));
+    border: 4px solid var(--Steel-border);
+}
+
+.Steel-Fight {
+    backGround: linear-gradient(var(--Steel),var(--Fight));
+    border: 4px solid var(--Steel-border);
+}
+
+.Steel-Fire {
+    backGround: linear-gradient(var(--Steel),var(--Fire));
+    border: 4px solid var(--Steel-border);
+}
+
+.Steel-Flying {
+    backGround: linear-gradient(var(--Steel),var(--Flying));
+    border: 4px solid var(--Steel-border);
+}
+
+.Steel-Ghost {
+    backGround: linear-gradient(var(--Steel),var(--Ghost));
+    border: 4px solid var(--Steel-border);
+}
+
+.Steel-Grass {
+    backGround: linear-gradient(var(--Steel),var(--Grass));
+    border: 4px solid var(--Steel-border);
+}
+
+.Steel-Ground {
+    backGround: linear-gradient(var(--Steel),var(--Ground));
+    border: 4px solid var(--Steel-border);
+}
+
+.Steel-Ice {
+    backGround: linear-gradient(var(--Steel),var(--Ice));
+    border: 4px solid var(--Steel-border);
+}
+
+.Steel-Normal {
+    backGround: linear-gradient(var(--Steel),var(--Normal));
+    border: 4px solid var(--Steel-border);
+}
+
+.Steel-Poison {
+    backGround: linear-gradient(var(--Steel),var(--Poison));
+    border: 4px solid var(--Steel-border);
+}
+
+.Steel-Psychic {
+    backGround: linear-gradient(var(--Steel),var(--Psychic));
+    border: 4px solid var(--Steel-border);
+}
+
+.Steel-Rock {
+    backGround: linear-gradient(var(--Steel),var(--Rock));
+    border: 4px solid var(--Steel-border);
+}
+
+.Steel-Water {
+    backGround: linear-gradient(var(--Steel),var(--Water));
+    border: 4px solid var(--Steel-border);
+}
+
+.Water {
+    backGround-color: var(--Water);
+    border: 4px solid var(--Water-border);
+}
+
+.Water-Bug {
+    backGround: linear-gradient(var(--Water),var(--Bug));
+    border: 4px solid var(--Water-border);
+}
+
+.Water-Dark {
+    backGround: linear-gradient(var(--Water),var(--Dark));
+    border: 4px solid var(--Water-border);
+}
+
+.Water-Dragon {
+    backGround: linear-gradient(var(--Water),var(--Dragon));
+    border: 4px solid var(--Water-border);
+}
+
+.Water-Electric {
+    backGround: linear-gradient(var(--Water),var(--Electric));
+    border: 4px solid var(--Water-border);
+}
+
+.Water-Fairy {
+    backGround: linear-gradient(var(--Water),var(--Fairy));
+    border: 4px solid var(--Water-border);
+}
+
+.Water-Fight {
+    backGround: linear-gradient(var(--Water),var(--Fight));
+    border: 4px solid var(--Water-border);
+}
+
+.Water-Fire {
+    backGround: linear-gradient(var(--Water),var(--Fire));
+    border: 4px solid var(--Water-border);
+}
+
+.Water-Flying {
+    backGround: linear-gradient(var(--Water),var(--Flying));
+    border: 4px solid var(--Water-border);
+}
+
+.Water-Ghost {
+    backGround: linear-gradient(var(--Water),var(--Ghost));
+    border: 4px solid var(--Water-border);
+}
+
+.Water-Grass {
+    backGround: linear-gradient(var(--Water),var(--Grass));
+    border: 4px solid var(--Water-border);
+}
+
+.Water-Ground {
+    backGround: linear-gradient(var(--Water),var(--Ground));
+    border: 4px solid var(--Water-border);
+}
+
+.Water-Ice {
+    backGround: linear-gradient(var(--Water),var(--Ice));
+    border: 4px solid var(--Water-border);
+}
+
+.Water-Normal {
+    backGround: linear-gradient(var(--Water),var(--Normal));
+    border: 4px solid var(--Water-border);
+}
+
+.Water-Poison {
+    backGround: linear-gradient(var(--Water),var(--Poison));
+    border: 4px solid var(--Water-border);
+}
+
+.Water-Psychic {
+    backGround: linear-gradient(var(--Water),var(--Psychic));
+    border: 4px solid var(--Water-border);
+}
+
+.Water-Rock {
+    backGround: linear-gradient(var(--Water),var(--Rock));
+    border: 4px solid var(--Water-border);
+}
+
+.Water-Steel {
+    backGround: linear-gradient(var(--Water),var(--Steel));
+    border: 4px solid var(--Water-border);
+}
